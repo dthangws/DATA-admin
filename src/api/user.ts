@@ -123,7 +123,7 @@ export type TypeUser = {
   full_name?: string;
   phone?: string;
   balance?: number;
-  referral_code?: string;
+  referral_code?: string | null;
   status?: UserStatusType;
   level?: LevelStatusType;
   file?: any;

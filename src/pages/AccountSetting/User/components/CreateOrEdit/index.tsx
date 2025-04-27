@@ -45,7 +45,7 @@ const CreateOrEdit = ({
         email: dataDetail?.data?.email || "",
         phone: dataDetail?.data?.phone || "",
         balance: dataDetail?.data?.balance || "",
-        referral_code: dataDetail?.data?.referral_code || "",
+        referral_code: dataDetail?.data?.referral_code || undefined,
         status: dataDetail?.data?.status || "pending",
       });
     }
@@ -63,7 +63,7 @@ const CreateOrEdit = ({
       email: values?.email || "",
       phone: values?.phone || "",
       balance: values?.balance || 0,
-      referral_code: values?.referral_code || "",
+      referral_code: values?.referral_code || null,
       password: values?.password || undefined,
       status: values?.status || "active",
     };
